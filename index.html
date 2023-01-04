@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victoria's Countdown Tracker</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1>Victoria's Countdown Tracker</h1>
+    </header>
+
+    <div class="main">
+      <p class="date">Select Event Date:</p>
+
+      <form class="calendar-form">
+        <input
+          autocomplete="off"
+          autofocus
+          class="input-event"
+          id="input-event"
+          type="date"
+        />
+        <button class="submit" type="submit"> Start!</button>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.1/dayjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.1/plugin/duration.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
