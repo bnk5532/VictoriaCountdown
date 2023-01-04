@@ -1,9 +1,5 @@
 dayjs.extend(dayjs_plugin_duration);
 
-// function myFunction() {
-//     var mylist = document.getElementById("myList");
-//     document.getElementById("demo").value = mylist.options[mylist.selectedIndex].text;
-//   }
 
 function activateCountdown(date) {
   const targetDate = dayjs(date);
