@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0 1rem;
+    font-family: sans-serif;
+  }
+
+input {
+    font-family: inherit;
+    padding: 8px;
+    border-radius: 4px;
+  }
+
+.main {}
+
+.submit {
+  padding: 10px;
+  background: rgb(20, 223, 203);
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+.calendar-form {
+  padding-top: 10px;
+}
+.until__component {
+  margin: 0.5rem;
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+}

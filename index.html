@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/style.css" />
     <title>Victoria's Countdown Tracker</title>
   </head>
   <body class="body">
@@ -19,25 +20,22 @@
             class="event"
             placeholder="Event Name"
           />
-            <button type="submit" class="btn-save" id="btn-save">
+            <button type="submit" class="submit" id="btn-save">
               Save
             </button>
         </div>
-
-      <p class="date">Select Event Date:</p>
-
+    
       <form class="calendar-form">
         
         <input
           autocomplete="off"
-          autofocus
-          class="input__time"
+          autofocus class="input__time"
           id="input__time"
           type="date"
         />
         <button class="submit" type="submit"> Start Now!</button>
       </form>
-
+    
       <div class="until" id="vCount">
         <div class="until__component">
           <div class="until__numeric until__numeric--days">00</div>
@@ -66,6 +64,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.1/dayjs.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.1/plugin/duration.min.js"></script>
-    <script src="main.js"></script>
+    <script src="/assets/main.js"></script>
   </body>
 </html>
