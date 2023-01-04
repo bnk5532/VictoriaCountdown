@@ -11,20 +11,74 @@
       <h1>Victoria's Countdown Tracker</h1>
     </header>
 
-    <div class="main">
+    <main class="main">
+       <!-- <form class="event-form">
+        <div class = "event-name">
+            <input
+            type="text"
+            id="event-name"
+            class="event-name"
+            placeholder="Event Name"
+          />
+            <button type="submit" class="btn-save" id="btn-save">
+              Save
+            </button>
+        </div>
+
       <p class="date">Select Event Date:</p>
+    </form> -->
+    <!-- <form>
+        Exciting Event:
+        <select id="myList" onchange="myFunction()">
+          <option></option>
+          <option>Birthday</option>
+          <option>Vacation</option>  
+          <option>Spring Break</option>
+          <option>Summer Break</option>
+          <option>Winter Break</option>
+          <option>Thanksgiving</option>
+          <option>Christmas</option>
+        </select>
+      <p>
+        <input type="text" id="demo" size="20"></p>
+      </form> -->
 
       <form class="calendar-form">
+        
         <input
           autocomplete="off"
           autofocus
-          class="input-event"
-          id="input-event"
+          class="input__time"
+          id="input__time"
           type="date"
         />
-        <button class="submit" type="submit"> Start!</button>
+        <button class="submit" type="submit"> Start Now!</button>
       </form>
-    </div>
+
+      <div class="until" id="vCount">
+        <div class="until__component">
+          <div class="until__numeric until__numeric--days">00</div>
+          <div class="until__unit ">Days</div>
+        </div>
+  
+        <div class="until__component">
+          <div class="until__numeric until__numeric--hours">00</div>
+          <div class="until__unit ">Hours</div>
+        </div>
+  
+        <div class="until__component">
+          <div class="until__numeric until__numeric--minutes">00</div>
+          <div class="until__unit ">Minutes</div>
+        </div>
+  
+        <div class="until__component">
+          <div class="until__numeric until__numeric--seconds">00</div>
+          <div class="until__unit ">Seconds</div>
+        </div>
+  
+        <div class="until__event">Until DD MM YYYY</div>
+      </div>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.1/dayjs.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.1/plugin/duration.min.js"></script>
