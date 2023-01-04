@@ -1,10 +1,15 @@
 dayjs.extend(dayjs_plugin_duration);
 
+// function eventAssignment(){
+//   var event = ""
+//   console.log(event)
+//   document.getElementById("event-name").textContent = `Event is ${event}`
+// }
 
 function activateCountdown(date) {
   const targetDate = dayjs(date);
 
-  document.getElementById("vCount").querySelector(".until__event").textContent = `Counting down until ${ targetDate.format("YYYY MM DD")}`;
+  document.getElementById("vCount").querySelector(".until__event").textContent = `Until ${ targetDate.format("MM/DD/YYYY")} and your ${("HARDCODED")} event`;
 
   setInterval(() => {
     const now = dayjs();
